@@ -392,7 +392,7 @@ if __name__== "__main__":
 				index_of_line=1
 				row=[]
 				par=line.split("|")#ppartition the line by the pipe.
-				if par[15]== None and (par[0].isalnum() and len(par[0])==9) and dtCheck(par[13]) and decCheck(par[14]):#validation
+				if len(par)==21 and par[15]== None and (par[0].isalnum() and len(par[0])==9) and dtCheck(par[13]) and decCheck(par[14]):#validation
 					for i in {0,10,13,14}:
 						row.append(par[i])#new lists of important info
 						row1=[]#This is dummy variable for rows(candidates) into the median_by_zip
